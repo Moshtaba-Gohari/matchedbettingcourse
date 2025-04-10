@@ -126,9 +126,7 @@
     </video>
     <h2 data-aos="fade-up">Tjäna 10 000 kr utan risk</h2>
     <p data-aos="fade-up" data-aos-delay="150">Beställ vår bonuskurs i matched betting idag. Börja tjäna direkt och betala först efter att du redan vunnit pengar.</p>
-    <form action="/login" method="POST" data-aos="fade-up" data-aos-delay="300">
-      <button class="cta-button">Logga in med BankID</button>
-    </form>
+    <button class="cta-button" onclick="startBankId()" data-aos="fade-up" data-aos-delay="300">Logga in med BankID</button>
   </section>
 
   <section class="section" id="om" data-aos="fade-up">
@@ -147,5 +145,10 @@
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>AOS.init();</script>
+  <script>
+    function startBankId() {
+      window.location.href = "/start-bankid";
+    }
+  </script>
 </body>
 </html>
