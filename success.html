@@ -5,84 +5,85 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Verifiering lyckades</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
+    * { box-sizing: border-box; }
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      background: #0f0f0f;
       color: white;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
+      overflow-x: hidden;
     }
-
     .hero {
+      position: relative;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
-      padding: 4rem 2rem;
+      padding: 6rem 2rem 4rem;
+      min-height: 100vh;
+      background-color: #000;
     }
-
-    .hero h1 {
-      font-size: 2rem;
-      font-weight: 600;
+    .hero video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      opacity: 0.25;
+    }
+    h1 {
+      font-size: 2.5rem;
       margin-bottom: 1rem;
-      max-width: 600px;
     }
-
-    .hero p {
+    p {
       font-size: 1.1rem;
-      color: #cfd8dc;
+      color: #cccccc;
       max-width: 600px;
-      margin-bottom: 2rem;
+      margin: 0 auto 2rem;
     }
-
-    .button {
-      background-color: #1f8ecd;
-      color: white;
-      padding: 0.75rem 1.5rem;
-      font-size: 1rem;
+    a.button {
+      background-color: #00ffc3;
+      color: black;
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+      font-weight: bold;
       border: none;
-      border-radius: 10px;
+      border-radius: 8px;
       cursor: pointer;
       text-decoration: none;
-      transition: background 0.3s ease;
+      transition: all 0.3s ease;
     }
-
-    .button:hover {
-      background-color: #156fa4;
+    a.button:hover {
+      transform: scale(1.05);
+      background-color: #00e6b0;
     }
-
     .footer {
-      margin-top: auto;
-      padding: 1rem;
       text-align: center;
-      font-size: 0.9rem;
       color: #aaa;
-    }
-
-    @media (min-width: 768px) {
-      .hero h1 {
-        font-size: 2.5rem;
-      }
+      margin-top: 2rem;
+      font-size: 0.85rem;
     }
   </style>
 </head>
 <body>
   <div class="hero">
-    <h1>Verifiering lyckades ✅</h1>
-    <p>Tack för att du loggade in med BankID.<br>Du är nu redo att gå med i kursen!</p>
-    <a href="https://discord.gg/fdqb866b" class="button">Gå med i Discord</a>
+    <video autoplay muted loop>
+      <source src="https://cdn.coverr.co/videos/coverr-bitcoin-mining-4580/1080p.mp4" type="video/mp4">
+    </video>
+    <h1 data-aos="fade-up">Verifiering lyckades ✅</h1>
+    <p data-aos="fade-up" data-aos-delay="150">Du är nu redo att gå med i vår exklusiva Discord-kanal för kursen.</p>
+    <a href="https://discord.gg/din-länk-här" class="button" data-aos="fade-up" data-aos-delay="300">Gå med i Discord</a>
+    <div class="footer" data-aos="fade-up" data-aos-delay="500">
+      © 2025 BonusKursen – Alla rättigheter förbehålls
+    </div>
   </div>
 
-  <div class="footer">
-    © 2025 MatchedBettingKursen – Alla rättigheter förbehålls
-  </div>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>
