@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Logga in med BankID</title>
+  <title>Bonuskurs - Matched Betting</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
@@ -23,19 +23,25 @@
       border-radius: 12px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
       text-align: center;
-      max-width: 400px;
+      max-width: 450px;
       width: 100%;
     }
 
     h1 {
       margin-bottom: 1rem;
-      font-size: 1.8rem;
-      color: #333;
+      font-size: 1.6rem;
+      color: #1a1a1a;
     }
 
     p {
-      margin-bottom: 2rem;
-      color: #555;
+      margin-bottom: 1rem;
+      color: #444;
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+
+    strong {
+      color: #000;
     }
 
     button {
@@ -47,6 +53,7 @@
       font-size: 1rem;
       cursor: pointer;
       transition: background 0.3s ease;
+      margin-top: 1rem;
     }
 
     button:hover {
@@ -56,8 +63,11 @@
 </head>
 <body>
   <div class="container">
-    <h1>Välkommen till kursen</h1>
-    <p>Klicka nedan för att logga in med BankID</p>
+    <h1>Tjäna över 10 000 kr – utan risk</h1>
+    <p><strong>Beställ bonuskursen i matched betting idag.</strong></p>
+    <p>🚫 Betala 0 kr idag<br>💰 Börja tjäna direkt<br>⏳ Betala först nästa måndag – när du redan har tjänat dina pengar.</p>
+    <p><strong>Inga förkunskaper. Inga genvägar. Bara smart strategi.</strong></p>
+
     <form action="/login" method="POST">
       <button type="submit">Logga in med BankID</button>
     </form>
